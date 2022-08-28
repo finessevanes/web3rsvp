@@ -2,6 +2,12 @@
 pragma solidity ^0.8.9;
 
 contract Web3RSVP {
+
+    // NewEventCreated
+    // NewRSVP
+    // ConfirmedAttendee
+    // DepositsPaidOut
+
     event NewEventCreated(
         bytes32 eventID,
         address creatorAddress,
