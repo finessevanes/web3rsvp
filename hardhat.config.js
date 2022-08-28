@@ -1,4 +1,5 @@
 require("@nomicfoundation/hardhat-toolbox");
+require("dotenv").config()
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
@@ -9,7 +10,7 @@ module.exports = {
     },
     mumbai: {
       url: process.env.STAGING_INFURA_URL,
-      accounts: [`0x${process.env.STAGING_PRIVATE_KEY}`],
+      accounts: [process.env.JACK_HERER_PRIVATE_KEY],
       gas: 2100000,
       gasPrice: 8000000000,
     },
